@@ -25,7 +25,7 @@ apps:
 
 parts:
   gdax-trading-bot:
-    source: https://github.com/kz6fittycent/GDAX-Trading-Bot
+    source: https://github.com/Kenshiro-28/GDAX-Trading-Bot
     source-type: git
     plugin: nodejs
 
