@@ -13,7 +13,7 @@ confinement: strict
 compression: lzo
 
 apps:
-  gdax-snap:
+  gdax-trading-bot:
     command: bin/node $SNAP/index.js
     command-chain: 
       - bin/homeishome-launch    
@@ -23,7 +23,7 @@ apps:
       - network-bind
 
 parts:
-  gdax-snap:
+  gdax-trading-bot:
     source: https://github.com/kz6fittycent/GDAX-Trading-Bot
     source-type: git
     plugin: nodejs
