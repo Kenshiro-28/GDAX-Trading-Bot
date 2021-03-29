@@ -31,10 +31,4 @@ parts:
   homeishome-launch:
     plugin: nil
     stage-snaps:
-      - homeishome-launch    
-      
-  publish:
-    plugin: dump
-    source: .
-    organize:
-      ./.bashrc: $SNAP_USER_DATA/.bashrc
+      - homeishome-launch
