@@ -24,7 +24,7 @@ apps:
 
 parts:
   gdax-snap:
-    source: https://github.com/Kenshiro-28/GDAX-Trading-Bot
+    source: https://github.com/kz6fittycent/GDAX-Trading-Bot
     source-type: git
     plugin: nodejs
 
@@ -34,7 +34,7 @@ parts:
       - homeishome-launch    
       
   publish:
-    dump:
-    source: https://github.com/Kenshiro-28/GDAX-Trading-Bot
+    plugin: dump
+    source: .
     organize:
-      ./bashrc: $SNAP_USER_DATA/.bashrc
+      ./.bashrc: $SNAP_USER_DATA/.bashrc
