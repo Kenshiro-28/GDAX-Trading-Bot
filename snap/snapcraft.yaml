@@ -1,8 +1,9 @@
 name: gdax-trading-bot
-version: 'git'
+version: '7.07'
 summary: Trading bot for Coinbase Pro
 description: |
     This program is an automated trading system that can autonomously trade the Maker / Bitcoin and Ethereum / Bitcoin pairs in the Coinbase Pro exchange.
+
 license: GPL-3.0
 
 assumes: 
