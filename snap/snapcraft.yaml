@@ -1,0 +1,35 @@
+name: gdax-trading-bot
+version: '7.07'
+summary: Trading bot for Coinbase Pro
+description: |
+    This program is an automated trading system that can autonomously trade the Maker / Bitcoin and Ethereum / Bitcoin pairs in the Coinbase Pro exchange.
+
+license: GPL-3.0
+
+assumes: 
+  - command-chain
+base: core18
+grade: stable
+confinement: strict
+compression: lzo
+
+apps:
+  gdax-trading-bot:
+    command: bin/node $SNAP/index.js
+    command-chain: 
+      - bin/homeishome-launch    
+    plugs:
+      - network
+      - home
+      - network-bind
+
+parts:
+  gdax-trading-bot:
+    source: https://github.com/Kenshiro-28/GDAX-Trading-Bot
+    source-type: git
+    plugin: nodejs
+
+  homeishome-launch:
+    plugin: nil
+    stage-snaps:
+      - homeishome-launch
